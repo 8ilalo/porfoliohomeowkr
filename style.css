@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar coding */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background: darkred;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 700p;
+    margin-left: 25px;
+    padding: 20px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: black
+}
+
+/* about section coding */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+section .title, .nottitle{
+   text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    
+}
+.about .about-content .left {
+    width: 45%;
+}
+.about .about-content,
+.work .work-content, 
+.contact .contact-content
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #111;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+/* home section coding */
+.home{
+    display: flex;
+    background: url("images/one.JPG") no-repeat center;
+    height: 100vh;
+    color: #fff ;
+    min-height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+    color: whitesmoke;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: whitesmoke;
+}
+
+.about .about-content .column{
+    width: 50%;
+}
+
+/* work section coding */
+.work{
+    color: #fff;
+    background: #111;
+    }
+.work .title::before{
+    background: #fff;
+}
+    
+.work .title::after{
+    background: #111;
+}
+.work .work-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.work .work-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.work .work-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.work .work-content .card .box {
+    transition: all 0.3s ease;
+}
+.work .work-content .card:hover .box {
+    transform: scale(1.05);
+}
+.work .work-content .card:hover{
+    background: darkred;
+}
+/* contact section */
+.contact .contact-content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px)
+}
+.contact{
+   color: white;
+}
+
+section{
+    padding: 100px 0;}
+ 
+    .contact .contact-content .left p{
+text-align: justify;
+    }
+    .contact .contact-content .text{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+   
+.contact .contact-content{
+    background-color: white;
+    color: black;
+}
+.title{
+    color: black;
+}
+.contact .contact-content .row{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.contact .contact-content .info i{
+    font-size: 25px;
+    color: darkred;
+}
+.contact .contact-content .info .head{
+    font-weight:  500px;
+}
+.contact .contact-content .info .subtitle{
+    color: #333;
+}
+.contact .contact-content,
+footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* footer section coding */
+footer{
+    background: black;
+    padding: 20px 23px;
+    color: white
+
+}
+footer span a{
+    color: darkred;
+    text-decoration: none;
+
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* something I found online to try to fix flex wrap. I have no idea what it did but I kept it in*/
+@media (max-width: 1104px) {
+    .about .about-content .left img{ 
+        height: 350px;
+        width: 350px;
+    }
+}
